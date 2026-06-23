@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+.vscode
+.env
+.DS_Store
+npm-debug.log
+coverage
+build
+package-lock.json
