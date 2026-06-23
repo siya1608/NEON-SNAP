@@ -55,4 +55,7 @@ docker run -p 3000:3000 --env NODE_ENV=production puzzle-hand:latest
 CI: a GitHub Action workflow is included at `.github/workflows/ci.yml` which will lint and build on push.
 
 If you want, I can also add a deployment workflow to publish a Docker image to GitHub Container Registry or automatically deploy to Vercel.
+To enable automatic Vercel deployment from GitHub Actions, add these repository secrets in GitHub: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, and `VERCEL_PROJECT_ID`. Then pushes to `main` will trigger the deploy workflow.
+
+Alternatively, you can connect the repo directly in the Vercel dashboard (recommended) — Vercel will build and deploy on every push without extra secrets.
 
